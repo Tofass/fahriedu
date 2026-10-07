@@ -1,0 +1,5 @@
+.cursor/
+.vscode/
+index (2).html
+serve.ps1
+*.tmp
