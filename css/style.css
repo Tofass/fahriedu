@@ -102,11 +102,11 @@ body.is-away .site-header {
   display: grid;
   place-items: center;
   box-sizing: border-box;
-  width: 64px;
-  height: 64px;
-  padding: 7px;
+  width: 72px;
+  height: 72px;
+  padding: 4px;
   flex-shrink: 0;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
   background: #f3ece3;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
@@ -381,12 +381,12 @@ main {
 }
 
 #home .display {
-  color: #111;
-  font-family: Nunito, Manrope, system-ui, sans-serif;
-  font-weight: 800;
+  color: #fbf6ee;
+  font-family: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
   text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.9),
-    0 2px 12px rgba(255, 255, 255, 0.55);
+    0 1px 2px rgba(0, 0, 0, 0.55),
+    0 3px 14px rgba(0, 0, 0, 0.42);
 }
 
 #home .lede,
@@ -394,9 +394,7 @@ main {
 #home .muted {
   color: #111;
   font-family: Nunito, Manrope, system-ui, sans-serif;
-  text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.88),
-    0 2px 10px rgba(255, 255, 255, 0.5);
+  text-shadow: none;
 }
 
 #home .lede {
@@ -639,6 +637,11 @@ main {
 .package .plain-list {
   margin-bottom: 8px;
   flex: 1;
+  align-content: start;
+}
+
+#pack-full .plain-list {
+  gap: 2px;
 }
 
 .card .package-price {
@@ -1139,9 +1142,15 @@ body.is-contacts .social-dock {
 
 .faq-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   align-items: start;
+}
+
+.faq-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .faq-article h1 {

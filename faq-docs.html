@@ -10,7 +10,7 @@
       if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
     })();
   </script>
-  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="icon" href="assets/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
   <header class="site-header">
     <div class="brand-wrap">
       <a class="brand-icon" href="index.html#home" aria-label="На главную">
-        <img src="assets/logo.jpg" alt="FahriYOS.EDU">
+        <img src="assets/logo.png" alt="FahriYOS.EDU">
       </a>
     </div>
     <nav class="site-nav" aria-label="Разделы">
@@ -42,6 +42,7 @@
       <h1 class="display">📄 Документы</h1>
 
       <div class="faq-grid">
+      <div class="faq-col">
       <details class="faq-item">
         <summary>Какие документы нужны для подачи?</summary>
         <div class="faq-a">
@@ -71,7 +72,8 @@
           <p>В большинстве случаев апостиль требуется на документ об образовании. Точные требования зависят от страны выдачи документа и университета.</p>
         </div>
       </details>
-
+      </div>
+      <div class="faq-col">
       <details class="faq-item">
         <summary>Что такое Denklik и нужен ли он мне?</summary>
         <div class="faq-a">
@@ -101,6 +103,7 @@
           <p>Да. В университетах первоначальная подача осуществляется онлайн через официальный сайт университета. После получения положительного решения или приглашения оригиналы и необходимые документы требуются лично.</p>
         </div>
       </details>
+      </div>
       </div>
 
       <nav class="faq-switch" aria-label="Другие вопросы">
