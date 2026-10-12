@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="dark">
+<html lang="ru" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,36 +10,53 @@
       if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
     })();
   </script>
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <meta name="description" content="Какие документы нужны для поступления в Турцию: аттестат, апостиль, Denklik и дистанционная подача.">
+  <link rel="canonical" href="https://tofass.github.io/fahriedu/faq-docs.html">
+  <meta property="og:title" content="Документы — FAQ | FahriYOS.EDU">
+  <meta property="og:description" content="Документы для подачи в университеты Турции: переводы, апостиль и Denklik.">
+  <meta property="og:url" content="https://tofass.github.io/fahriedu/faq-docs.html">
+  <meta property="og:image" content="https://tofass.github.io/fahriedu/assets/bg-home.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="faq-page is-away">
+  <a class="skip-link" href="#main">К содержанию</a>
   <header class="site-header">
-    <div class="brand-wrap">
-      <a class="brand-icon" href="index.html#home" aria-label="На главную">
-        <img src="assets/logo.png" alt="FahriYOS.EDU">
-      </a>
-    </div>
-    <nav class="site-nav" aria-label="Разделы">
+    <a class="brand" href="index.html#home" aria-label="FahriYOS.EDU — на главную">
+      <span class="brand-icon">
+        <img src="assets/logo-512.jpg" alt="" width="512" height="512">
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">FahriYOS<span class="brand-edu">.EDU</span></span>
+        <span class="brand-tag">Study &amp; life in Türkiye</span>
+      </span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Разделы">
       <a href="index.html#home">Главная</a>
       <a href="index.html#services">Услуги</a>
-      <a href="index.html#packages">Пакеты</a>
       <a href="index.html#process">Как работаем</a>
+      <a href="index.html#packages">Пакеты</a>
       <a class="is-active" href="index.html#faq">FAQ</a>
       <a href="index.html#contacts">Контакты</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Переключить тему">
-      <span class="theme-toggle-icon" aria-hidden="true"></span>
-    </button>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Переключить тему">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <a class="btn btn-header" href="index.html#contacts">Консультация</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span>
+      </button>
+    </div>
   </header>
-  <main class="page-section page-section--beige">
+  <main class="page-section" id="main">
     <article class="faq-article">
       <a class="faq-back" href="index.html#faq">← Все вопросы</a>
       <p class="eyebrow">FAQ</p>
-      <h1 class="display">📄 Документы</h1>
+      <h1 class="display">Документы</h1>
 
       <div class="faq-grid">
       <div class="faq-col">
@@ -109,15 +126,16 @@
       <nav class="faq-switch" aria-label="Другие вопросы">
         <p>Другие вопросы</p>
         <div class="faq-switch-row">
-          <a href="faq-admission.html">🎓 Поступление в университет</a>
-          <a href="faq-tryos.html">📝 TR-YÖS</a>
-          <a href="faq-who.html">🤝 Для кого подходит наша помощь?</a>
+          <a href="faq-admission.html">Поступление в университет</a>
+          <a href="faq-tryos.html">TR-YÖS</a>
+          <a href="faq-who.html">Кому подходит помощь</a>
         </div>
       </nav>
     </article>
   </main>
   <footer class="site-footer">
     <p class="footer-brand"><span class="brand-mark">FahriYOS</span><span class="brand-rest">.EDU</span></p>
+    <p class="footer-tag">Study &amp; life in Türkiye</p>
     <nav class="footer-social" aria-label="Соцсети в подвале">
       <a href="https://youtube.com/@tryosfahri" target="_blank" rel="noopener" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt=""></a>
       <a href="https://instagram.com/fahri_yos" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>

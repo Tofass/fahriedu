@@ -1,134 +1,235 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="dark">
+<html lang="ru" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FahriYOS.EDU — TR-YÖS, поступление и переезд в Турцию</title>
+  <title>FahriYOS.EDU — поступление в университеты Турции и подготовка к TR-YÖS</title>
   <script>
     (function () {
       var t = localStorage.getItem("fahriyos-theme");
       if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
     })();
   </script>
-  <meta name="description" content="FahriYOS.EDU: подготовка к TR-YÖS, поступление в университеты Турции, документы, жильё и адаптация.">
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <meta name="description" content="FahriYOS.EDU помогает иностранным студентам выбрать университет в Турции, подготовиться к TR-YÖS, оформить документы и организовать переезд.">
+  <link rel="canonical" href="https://tofass.github.io/fahriedu/">
+  <meta name="theme-color" content="#174A3B">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="FahriYOS.EDU">
+  <meta property="og:title" content="FahriYOS.EDU — поступление в университеты Турции">
+  <meta property="og:description" content="Подготовка к TR-YÖS, подача в университеты, документы, жильё и адаптация в Турции.">
+  <meta property="og:url" content="https://tofass.github.io/fahriedu/">
+  <meta property="og:image" content="https://tofass.github.io/fahriedu/assets/bg-home.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/logo-512.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="assets/logo-512.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;700&family=Nunito:wght@500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="home-bg" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">К содержанию</a>
   <header class="site-header">
-    <div class="brand-wrap">
-      <a class="brand-icon" href="#home" aria-label="На главную">
-        <img src="assets/logo.png" alt="FahriYOS.EDU">
-      </a>
-    </div>
-    <nav class="site-nav" aria-label="Разделы">
+    <a class="brand" href="#home" aria-label="FahriYOS.EDU — на главную">
+      <span class="brand-icon">
+        <img src="assets/logo-512.jpg" alt="" width="512" height="512">
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">FahriYOS<span class="brand-edu">.EDU</span></span>
+        <span class="brand-tag">Study &amp; life in Türkiye</span>
+      </span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Разделы">
       <a class="is-active" href="#home">Главная</a>
       <a href="#services">Услуги</a>
-      <a href="#packages">Пакеты</a>
       <a href="#process">Как работаем</a>
+      <a href="#packages">Пакеты</a>
       <a href="#faq">FAQ</a>
       <a href="#contacts">Контакты</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Переключить тему">
-      <span class="theme-toggle-icon" aria-hidden="true"></span>
-    </button>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Переключить тему">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <a class="btn btn-header" href="#contacts">Консультация</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <section class="page-section" id="home">
+  <main id="main">
+    <section class="page-section page-hero" id="home">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/bg-home.webp" alt="Стамбул на закате: Новая мечеть и Галатский мост" width="1920" height="1080" fetchpriority="high">
+      </div>
       <div class="hero">
+        <p class="eyebrow eyebrow-light">Поступление в университеты Турции</p>
         <h1 class="display">
-          <span class="brand-in-title"><span class="brand-mark">FahriYOS</span><span class="brand-rest">.EDU</span></span>
-          от мечты о Турции — до студенческого билета
+          <span class="hero-brand"><span class="brand-mark">FahriYOS</span><span class="brand-rest">.EDU</span></span>
+          от мечты о Турции&nbsp;— до студенческого билета
         </h1>
-        <p class="lede">Мы помогаем иностранным студентам поступать и адаптироваться в Турции. Мы сопровождаем студентов на разных этапах: от подготовки к TR-YÖS и поступления в университет до переезда и адаптации в Турции. Наша цель — сделать процесс поступления и переезда понятным, организованным и максимально комфортным для студента.</p>
-      </div>
-      <div class="home-directions">
-      <h2 class="section-title">Направления</h2>
-      <p class="muted">Четыре линии помощи. Полный список — в разделе услуг.</p>
-      <div class="cards cards-4">
-        <a class="card card-link" href="#service-tryos">
-          <h3>Подготовка к TR—YÖS</h3>
-          <p>Занятия, онлайн-курс и пробные тесты.</p>
-        </a>
-        <a class="card card-link" href="#service-admission">
-          <h3>Подача в университет</h3>
-          <p>Подбор вуза и сопровождение до пригласительного письма.</p>
-        </a>
-        <a class="card card-link" href="#service-docs">
-          <h3>Документы и ВНЖ</h3>
-          <p>Денклик, ikamet, страховка, переводы.</p>
-        </a>
-        <a class="card card-link" href="#service-housing">
-          <h3>Жильё и переезд</h3>
-          <p>Квартира, заселение, аэропорт, банк.</p>
-        </a>
-      </div>
+        <p class="lede">Помогаем выбрать университет, подготовиться к поступлению, оформить документы и организовать переезд в Турцию.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="#contacts">Получить консультацию</a>
+          <a class="btn btn-ghost" href="#packages">Посмотреть программы</a>
+        </div>
+        <nav class="hero-dirs" aria-label="Направления">
+          <a href="#service-tryos"><span>01</span>Подготовка к TR-YÖS</a>
+          <a href="#service-admission"><span>02</span>Подача в университет</a>
+          <a href="#service-docs"><span>03</span>Документы и ВНЖ</a>
+          <a href="#service-housing"><span>04</span>Жильё и переезд</a>
+        </nav>
       </div>
     </section>
 
-    <section class="page-section page-section--beige" id="services">
-      <p class="eyebrow">Услуги</p>
-      <h2 class="display">Полный список.</h2>
-      <p class="lead">Можно взять одно направление или собрать путь из пакетов ниже.</p>
+    <section class="page-section" id="services">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Услуги</p>
+        <h2 class="display">Четыре направления помощи</h2>
+        <p class="lead">Можно взять одно направление или собрать путь из пакетов. Зачисление в конкретный университет зависит от экзаменов, требований вуза и решения приёмной комиссии.</p>
+      </div>
 
-      <div class="service-grid">
-      <article class="block" id="service-tryos">
-        <h3>Подготовка к TR-YÖS</h3>
-        <ul class="plain-list">
-          <li>Мини-группы</li>
-          <li>Домашние занатия</li>
-          <li>Запись занятий</li>
-          <li>Пробные тесты</li>
-          <li>Разбор ошибок</li>
-        </ul>
-      </article>
+      <div class="service-list">
+        <article class="service reveal" id="service-tryos">
+          <p class="service-no">01</p>
+          <div class="service-body">
+            <h3>Подготовка к TR-YÖS</h3>
+            <p class="service-who">Для абитуриентов, которым нужен экзамен для подачи в университеты.</p>
+            <ul class="plain-list">
+              <li>Мини-группы</li>
+              <li>Домашние занятия</li>
+              <li>Запись занятий</li>
+              <li>Пробные тесты</li>
+              <li>Разбор ошибок</li>
+            </ul>
+            <p class="service-result">Результат: план подготовки, материалы и регулярная практика с разбором ошибок.</p>
+            <a class="text-link" href="#pack-prep">Пакет 1 — $300 / месяц</a>
+          </div>
+        </article>
 
-      <article class="block" id="service-admission">
-        <h3>Поступление в университет</h3>
-        <ul class="plain-list">
-          <li>Консультация по выбору вуза и специальности</li>
-          <li>Подбор университетов под бюджет и цели</li>
-          <li>Подготовка документов</li>
-          <li>Подача документов в университет</li>
-          <li>Сопровождение до получения пригласительного письмя</li>
-        </ul>
-      </article>
+        <article class="service reveal" id="service-admission">
+          <p class="service-no">02</p>
+          <div class="service-body">
+            <h3>Поступление в университет</h3>
+            <p class="service-who">Для тех, кто выбирает вуз и специальность и готов подавать документы.</p>
+            <ul class="plain-list">
+              <li>Консультация по выбору вуза и специальности</li>
+              <li>Подбор университетов под бюджет и цели</li>
+              <li>Подготовка документов</li>
+              <li>Подача документов в университет</li>
+              <li>Сопровождение до получения пригласительного письма</li>
+            </ul>
+            <p class="service-result">Результат: подобранные варианты, поданная заявка и сопровождение до ответа университета.</p>
+            <a class="text-link" href="#pack-admission">Пакет 2 — $350</a>
+          </div>
+        </article>
 
-      <article class="block" id="service-docs">
-        <h3>Документы и легализация</h3>
-        <ul class="plain-list">
-          <li>Денклик (эквивалентность школьного аттестата)</li>
-          <li>Помощь со студенческим ВНЖ (ikamet)</li>
-          <li>Медицинская страховка</li>
-          <li>Нотариальный перевод (через партнёров)</li>
-          <li>Апостиль (если нужно)</li>
-        </ul>
-      </article>
+        <article class="service reveal" id="service-docs">
+          <p class="service-no">03</p>
+          <div class="service-body">
+            <h3>Документы и легализация</h3>
+            <p class="service-who">Для тех, кому нужны денклик, студенческий ВНЖ и сопутствующие бумаги.</p>
+            <ul class="plain-list">
+              <li>Денклик (эквивалентность школьного аттестата)</li>
+              <li>Помощь со студенческим ВНЖ (ikamet)</li>
+              <li>Медицинская страховка</li>
+              <li>Нотариальный перевод (через партнёров)</li>
+              <li>Апостиль (если нужно)</li>
+            </ul>
+            <p class="service-result">Результат: понятный список документов и сопровождение оформления.</p>
+            <a class="text-link" href="#packages">Смотреть пакеты и разовые услуги</a>
+          </div>
+        </article>
 
-      <article class="block" id="service-housing">
-        <h3>Жильё и переезд</h3>
-        <ul class="plain-list">
-          <li>Поиск квартиры / общежития</li>
-          <li>Проверка договора аренды</li>
-          <li>Помощь с заселением</li>
-          <li>Помощь с SIM-карта</li>
-          <li>Встреча в аэропорту (опционально)</li>
-          <li>Открытие банковского счёта</li>
-        </ul>
-      </article>
+        <article class="service reveal" id="service-housing">
+          <p class="service-no">04</p>
+          <div class="service-body">
+            <h3>Жильё и переезд</h3>
+            <p class="service-who">Для студентов, которые переезжают в Турцию и решают бытовые вопросы на месте.</p>
+            <ul class="plain-list">
+              <li>Поиск квартиры / общежития</li>
+              <li>Проверка договора аренды</li>
+              <li>Помощь с заселением</li>
+              <li>Помощь с SIM-картой</li>
+              <li>Встреча в аэропорту (опционально)</li>
+              <li>Открытие банковского счёта</li>
+            </ul>
+            <p class="service-result">Результат: жильё, связь, банк и первые шаги после прилёта.</p>
+            <a class="text-link" href="#pack-settle">Пакет 3 — $350</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="page-section page-section--beige" id="packages">
-      <h2 class="display">Пакеты</h2>
+    <section class="page-section page-section--tint" id="process">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Как мы работаем</p>
+        <h2 class="display">Процесс по шагам</h2>
+        <p class="lead">От первой консультации до адаптации в Турции. На каждом этапе видно, что делаете вы и в чём помогаем мы.</p>
+      </div>
+      <div class="process-layout reveal">
+        <ol class="steps">
+          <li>
+            <button class="step-btn is-open" type="button" aria-expanded="true" data-you="Рассказываете о целях, бюджете и сроках." data-we="Определяем подходящий маршрут и набор услуг." data-detail="На первой встрече разбираемся в вашей ситуации и определяем, какой путь подходит именно вам. Обсуждаем цели обучения, желаемую специальность и университет, бюджет и сроки. После этого определяем, какие услуги вам необходимы — от подготовки к экзамену до полного сопровождения поступления и переезда.">
+              <h3>Знакомство</h3>
+              <p>Ситуация, цели, бюджет и какие услуги нужны.</p>
+            </button>
+          </li>
+          <li>
+            <button class="step-btn" type="button" aria-expanded="false" data-you="Готовитесь к экзамену и собираете документы." data-we="Составляем план и проверяем требования вузов." data-detail="Составляем план подготовки в зависимости от выбранного направления и требований университетов. Если нужен TR-YÖS — помогаем с подготовкой к экзамену, разбираем темы, решаем задания и работаем над результатом. Параллельно проверяем необходимые документы, переводы и другие требования для подачи.">
+              <h3>Подготовка</h3>
+              <p>Экзамены, документы и подготовка к поступлению.</p>
+            </button>
+          </li>
+          <li>
+            <button class="step-btn" type="button" aria-expanded="false" data-you="Подтверждаете выбор вузов и подаёте документы." data-we="Подбираем программы и сопровождаем подачу." data-detail="Подбираем университеты и программы с учётом ваших целей, результатов и бюджета. Проверяем требования и сроки подачи, помогаем подготовить необходимые документы и сопровождаем процесс подачи заявления. После подачи остаёмся на связи и помогаем разобраться с дальнейшими этапами до получения результата от университета.">
+              <h3>Поступление</h3>
+              <p>Подбор вузов, документы, подача и сопровождение до зачисления.</p>
+            </button>
+          </li>
+          <li>
+            <button class="step-btn" type="button" aria-expanded="false" data-you="Готовитесь к переезду и прилёту." data-we="Помогаем с денкликом, ВНЖ, жильём и дорогой." data-detail="После поступления помогаем подготовиться к переезду в Турцию. При необходимости сопровождаем процесс получения денклика и ВНЖ, помогаем оформить страховку, подобрать жильё и организовать дорогу. Также можем встретить вас в аэропорту и помочь добраться до места проживания.">
+              <h3>Переезд</h3>
+              <p>Денклик, ВНЖ, страховка, жильё и организация переезда.</p>
+            </button>
+          </li>
+          <li>
+            <button class="step-btn" type="button" aria-expanded="false" data-you="Проходите регистрацию и обустраиваетесь." data-we="Помогаем с университетом, заселением и бытом." data-detail="Помогаем пройти первые этапы после приезда в Турцию. При необходимости сопровождаем при регистрации в университете, заселении и решении организационных вопросов. Помогаем сориентироваться в городе и разобраться с бытовыми задачами, которые возникают в первые дни и недели после переезда.">
+              <h3>Адаптация</h3>
+              <p>Регистрация в университете, заселение и бытовые вопросы.</p>
+            </button>
+          </li>
+        </ol>
+        <div class="step-detail" id="step-detail">
+          <p class="eyebrow">Шаг 1</p>
+          <h3>Знакомство</h3>
+          <p class="muted">На первой встрече разбираемся в вашей ситуации и определяем, какой путь подходит именно вам. Обсуждаем цели обучения, желаемую специальность и университет, бюджет и сроки. После этого определяем, какие услуги вам необходимы — от подготовки к экзамену до полного сопровождения поступления и переезда.</p>
+          <dl class="step-split">
+            <div>
+              <dt>Вы</dt>
+              <dd>Рассказываете о целях, бюджете и сроках.</dd>
+            </div>
+            <div>
+              <dt>Мы</dt>
+              <dd>Определяем подходящий маршрут и набор услуг.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="packages">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Пакеты</p>
+        <h2 class="display">Тарифы сопровождения</h2>
+        <p class="lead">Пять пакетов и разовые услуги. Пакет 4 объединяет поступление и переезд онлайн: это пакеты 2 и 3 вместе за $600 вместо $700.</p>
+      </div>
 
       <div class="cards cards-packages">
-        <article class="card package" id="pack-prep">
+        <article class="card package reveal" id="pack-prep">
           <p class="package-no">Пакет 1</p>
           <h3>Подготовка к TR-YÖS</h3>
           <ul class="plain-list">
@@ -137,10 +238,11 @@
             <li>Пробные тесты</li>
             <li>Материалы</li>
           </ul>
-          <p class="package-price"><strong>300$</strong><span>месяц</span></p>
+          <p class="package-price"><strong>$300</strong><span>/ месяц</span></p>
+          <a class="btn btn-ghost" href="#contacts" data-pack="prep">Выбрать пакет</a>
         </article>
 
-        <article class="card package" id="pack-admission">
+        <article class="card package reveal" id="pack-admission">
           <p class="package-no">Пакет 2</p>
           <h3>Поступление в университет</h3>
           <ul class="plain-list">
@@ -149,10 +251,11 @@
             <li>Подача заявки</li>
             <li>Сопровождение до получения пригласительного письма</li>
           </ul>
-          <p class="package-price"><strong>350$</strong></p>
+          <p class="package-price"><strong>$350</strong></p>
+          <a class="btn btn-ghost" href="#contacts" data-pack="admission">Выбрать пакет</a>
         </article>
 
-        <article class="card package" id="pack-settle">
+        <article class="card package reveal" id="pack-settle">
           <p class="package-no">Пакет 3</p>
           <h3>Переезд и адаптация</h3>
           <ul class="plain-list">
@@ -162,11 +265,13 @@
             <li>Подача на ВНЖ</li>
             <li>Страховка</li>
           </ul>
-          <p class="package-price"><strong>350$</strong></p>
+          <p class="package-price"><strong>$350</strong></p>
+          <a class="btn btn-ghost" href="#contacts" data-pack="settle">Выбрать пакет</a>
         </article>
 
-        <article class="card package" id="pack-online">
+        <article class="card package is-featured reveal" id="pack-online">
           <p class="package-no">Пакет 4</p>
+          <p class="package-badge">Пакеты 2 и 3 вместе</p>
           <h3>Полное онлайн сопровождение</h3>
           <ul class="plain-list">
             <li>Подбор вуза</li>
@@ -179,10 +284,11 @@
             <li>Подача на ВНЖ</li>
             <li>Страховка</li>
           </ul>
-          <p class="package-price"><strong>600$</strong></p>
+          <p class="package-price"><strong>$600</strong></p>
+          <a class="btn btn-solid" href="#contacts" data-pack="online">Выбрать пакет</a>
         </article>
 
-        <article class="card package" id="pack-full">
+        <article class="card package reveal" id="pack-full">
           <p class="package-no">Пакет 5</p>
           <h3>Полное сопровождение</h3>
           <ul class="plain-list">
@@ -190,118 +296,98 @@
             <li>Совместное посещение университета, жилья и тд.</li>
             <li>Всё из пакетов 2 и 3</li>
           </ul>
-          <p class="package-price"><strong>1500$</strong></p>
+          <p class="package-price"><strong>$1500</strong></p>
+          <a class="btn btn-ghost" href="#contacts" data-pack="full">Выбрать пакет</a>
         </article>
+      </div>
 
-        <article class="card package" id="pack-extra">
+      <article class="extras reveal" id="pack-extra">
+        <div class="extras-copy">
           <p class="package-no">Разовые услуги</p>
           <h3>По отдельности</h3>
-          <ul class="plain-list extra-list">
-            <li><span>Подача в один университет</span><strong>70$</strong></li>
-            <li><span>Подача в три и более</span><strong>200$</strong></li>
-            <li><span>Страховка для ВНЖ</span><strong>500 лир</strong></li>
-            <li><span>Подача на студенческий ВНЖ</span><strong>100$</strong></li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="page-section page-section--beige" id="process">
-      <p class="eyebrow">Как мы работаем</p>
-      <h2 class="display">Процесс по шагам.</h2>
-      <div class="process-layout">
-        <ol class="steps">
-          <li>
-            <button class="step-btn is-open" type="button" aria-expanded="true" data-detail="На первой встрече разбираемся в вашей ситуации и определяем, какой путь подходит именно вам. Обсуждаем цели обучения, желаемую специальность и университет, бюджет и сроки. После этого определяем, какие услуги вам необходимы — от подготовки к экзамену до полного сопровождения поступления и переезда.">
-              <h3>Знакомство</h3>
-              <p>Ситуация, цели, бюджет и какие услуги нужны.</p>
-            </button>
-          </li>
-          <li>
-            <button class="step-btn" type="button" aria-expanded="false" data-detail="Составляем план подготовки в зависимости от выбранного направления и требований университетов. Если нужен TR-YÖS — помогаем с подготовкой к экзамену, разбираем темы, решаем задания и работаем над результатом. Параллельно проверяем необходимые документы, переводы и другие требования для подачи.">
-              <h3>Подготовка</h3>
-              <p>Экзамены, документы и подготовка к поступлению.</p>
-            </button>
-          </li>
-          <li>
-            <button class="step-btn" type="button" aria-expanded="false" data-detail="Подбираем университеты и программы с учётом ваших целей, результатов и бюджета. Проверяем требования и сроки подачи, помогаем подготовить необходимые документы и сопровождаем процесс подачи заявления. После подачи остаёмся на связи и помогаем разобраться с дальнейшими этапами до получения результата от университета.">
-              <h3>Поступление</h3>
-              <p>Подбор вузов, документы, подача и сопровождение до зачисления.</p>
-            </button>
-          </li>
-          <li>
-            <button class="step-btn" type="button" aria-expanded="false" data-detail="После поступления помогаем подготовиться к переезду в Турцию. При необходимости сопровождаем процесс получения денклика и ВНЖ, помогаем оформить страховку, подобрать жильё и организовать дорогу. Также можем встретить вас в аэропорту и помочь добраться до места проживания.">
-              <h3>Переезд</h3>
-              <p>Денклик, ВНЖ, страховка, жильё и организация переезда.</p>
-            </button>
-          </li>
-          <li>
-            <button class="step-btn" type="button" aria-expanded="false" data-detail="Помогаем пройти первые этапы после приезда в Турцию. При необходимости сопровождаем при регистрации в университете, заселении и решении организационных вопросов. Помогаем сориентироваться в городе и разобраться с бытовыми задачами, которые возникают в первые дни и недели после переезда.">
-              <h3>Адаптация</h3>
-              <p>Регистрация в университете, заселение и бытовые вопросы.</p>
-            </button>
-          </li>
-        </ol>
-        <div class="step-detail" id="step-detail">
-          <p class="eyebrow">Шаг подробнее</p>
-          <h3>Знакомство</h3>
-          <p class="muted">На первой встрече разбираемся в вашей ситуации и определяем, какой путь подходит именно вам. Обсуждаем цели обучения, желаемую специальность и университет, бюджет и сроки. После этого определяем, какие услуги вам необходимы — от подготовки к экзамену до полного сопровождения поступления и переезда.</p>
+          <p class="muted">Если нужен один конкретный шаг, а не полный пакет.</p>
         </div>
-      </div>
+        <ul class="plain-list extra-list">
+          <li><span>Подача в один университет</span><strong>$70</strong></li>
+          <li><span>Подача в три и более</span><strong>$200</strong></li>
+          <li><span>Страховка для ВНЖ</span><strong>500 ₺</strong></li>
+          <li><span>Подача на студенческий ВНЖ</span><strong>$100</strong></li>
+        </ul>
+        <a class="btn btn-ghost" href="#contacts" data-pack="one-uni">Запросить услугу</a>
+      </article>
+      <p class="price-note">Сроки, способ оплаты и точный состав работ уточняются на консультации. Зачисление не гарантируется: решение принимает университет.</p>
     </section>
 
-    <section class="page-section page-section--beige" id="faq">
-      <h2 class="display">Часто задаваемые вопросы</h2>
+    <section class="page-section page-section--tint" id="faq">
+      <div class="section-intro reveal">
+        <h2 class="display">Часто задаваемые вопросы</h2>
+        <p class="lead">Коротко о поступлении, TR-YÖS, документах и о том, кому подходит сопровождение.</p>
+      </div>
       <div class="faq-hub">
-        <a class="faq-card" href="faq-admission.html">
-          <h3>🎓 Поступление в университет</h3>
+        <a class="faq-card reveal" href="faq-admission.html">
+          <span>01</span>
+          <h3>Поступление в университет</h3>
+          <p>Как подать документы, нужен ли TR-YÖS и как выбрать вуз.</p>
         </a>
-        <a class="faq-card" href="faq-tryos.html">
-          <h3>📝 TR-YÖS</h3>
+        <a class="faq-card reveal" href="faq-tryos.html">
+          <span>02</span>
+          <h3>TR-YÖS</h3>
+          <p>Формат экзамена, темы и как проходят занятия.</p>
         </a>
-        <a class="faq-card" href="faq-docs.html">
-          <h3>📄 Документы</h3>
+        <a class="faq-card reveal" href="faq-docs.html">
+          <span>03</span>
+          <h3>Документы</h3>
+          <p>Аттестат, апостиль, Denklik и дистанционная подача.</p>
         </a>
-        <a class="faq-card" href="faq-who.html">
-          <h3>🤝 Для кого подходит наша помощь?</h3>
+        <a class="faq-card reveal" href="faq-who.html">
+          <span>04</span>
+          <h3>Кому подходит помощь</h3>
+          <p>СНГ, подача из-за границы и сопровождение уже в Турции.</p>
         </a>
       </div>
     </section>
 
-    <section class="page-section page-section--beige" id="contacts">
-      <div class="contacts-inner">
-        <p class="eyebrow">Контакты</p>
-        <h2 class="display">Связаться.</h2>
-        <p class="muted">Выберите пакет и напишите — сообщение уйдёт в Telegram.</p>
-        <form class="form" id="contact-form">
+    <section class="page-section" id="contacts">
+      <div class="contacts-layout">
+        <div class="contacts-copy reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2 class="display">Получить консультацию</h2>
+          <p class="muted">Выберите пакет или услугу — откроется Telegram с готовым текстом. Нажмите «Отправить» в мессенджере, чтобы мы получили заявку.</p>
+          <p class="contact-direct">
+            Telegram для заявок:
+            <a href="https://t.me/lanperor" target="_blank" rel="noopener">@lanperor</a>
+          </p>
+        </div>
+        <form class="form reveal" id="contact-form" novalidate>
+          <p class="form-status" id="form-status" hidden></p>
           <label>
-            Пакет
+            Пакет или услуга
             <select name="package" required>
               <option value="" disabled selected>Выберите пакет</option>
-              <option value="prep" data-price="300$ / месяц" data-title="Подготовка к TR-YÖS">Пакет 1 — Подготовка к TR-YÖS · 300$ / месяц</option>
-              <option value="admission" data-price="350$" data-title="Поступление в университет">Пакет 2 — Поступление в университет · 350$</option>
-              <option value="settle" data-price="350$" data-title="Переезд и адаптация">Пакет 3 — Переезд и адаптация · 350$</option>
-              <option value="online" data-price="600$" data-title="Полное онлайн сопровождение">Пакет 4 — Полное онлайн сопровождение · 600$</option>
-              <option value="full" data-price="1500$" data-title="Полное сопровождение">Пакет 5 — Полное сопровождение · 1500$</option>
-              <option value="one-uni" data-price="70$" data-title="Подача в один университет">Подача в один университет · 70$</option>
-              <option value="three-uni" data-price="200$" data-title="Подача в три и более">Подача в три и более · 200$</option>
-              <option value="insurance" data-price="500 лир" data-title="Страховка для ВНЖ">Страховка для ВНЖ · 500 лир</option>
-              <option value="ikamet" data-price="100$" data-title="Подача на студенческий ВНЖ">Подача на студенческий ВНЖ · 100$</option>
+              <option value="prep" data-price="$300 / месяц" data-title="Подготовка к TR-YÖS">Пакет 1 — Подготовка к TR-YÖS · $300 / месяц</option>
+              <option value="admission" data-price="$350" data-title="Поступление в университет">Пакет 2 — Поступление в университет · $350</option>
+              <option value="settle" data-price="$350" data-title="Переезд и адаптация">Пакет 3 — Переезд и адаптация · $350</option>
+              <option value="online" data-price="$600" data-title="Полное онлайн сопровождение">Пакет 4 — Полное онлайн сопровождение · $600</option>
+              <option value="full" data-price="$1500" data-title="Полное сопровождение">Пакет 5 — Полное сопровождение · $1500</option>
+              <option value="one-uni" data-price="$70" data-title="Подача в один университет">Подача в один университет · $70</option>
+              <option value="three-uni" data-price="$200" data-title="Подача в три и более">Подача в три и более · $200</option>
+              <option value="insurance" data-price="500 ₺" data-title="Страховка для ВНЖ">Страховка для ВНЖ · 500 ₺</option>
+              <option value="ikamet" data-price="$100" data-title="Подача на студенческий ВНЖ">Подача на студенческий ВНЖ · $100</option>
             </select>
           </label>
           <label>
             Имя
-            <input type="text" name="name" placeholder="Как к вам обращаться">
+            <input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться">
           </label>
           <label>
             Контакт
-            <input type="text" name="contact" placeholder="Телефон или Telegram">
+            <input type="text" name="contact" autocomplete="tel" required placeholder="Телефон или Telegram">
           </label>
           <label>
             Сообщение
             <textarea name="message" placeholder="Этап, вуз или что нужно посчитать"></textarea>
           </label>
-          <button class="btn btn-solid" type="submit">Связаться</button>
+          <button class="btn btn-solid" type="submit">Открыть заявку в Telegram</button>
         </form>
       </div>
     </section>
@@ -309,6 +395,7 @@
 
   <footer class="site-footer">
     <p class="footer-brand"><span class="brand-mark">FahriYOS</span><span class="brand-rest">.EDU</span></p>
+    <p class="footer-tag">Study &amp; life in Türkiye</p>
     <nav class="footer-social" aria-label="Соцсети в подвале">
       <a href="https://youtube.com/@tryosfahri" target="_blank" rel="noopener" aria-label="YouTube">
         <img src="assets/icons/youtube.svg" alt="">
