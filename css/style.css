@@ -698,16 +698,21 @@ html[data-theme="dark"] .text-link {
 }
 
 .package-badge {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   display: inline-flex;
-  padding: 4px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
-  background: var(--green);
-  color: #f7f4ed;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  background: #efe4cc;
+  color: #174a3b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
+html[data-theme="dark"] .package-badge {
+  background: rgba(212, 181, 122, 0.22);
+  color: #f3eee4;
 }
 
 .package h3,
@@ -762,8 +767,33 @@ html[data-theme="dark"] .text-link {
   color: var(--muted);
 }
 
-.package .btn {
+.package .btn,
+.extras .btn {
   width: 100%;
+  background: #d9e4d9;
+  color: #174a3b;
+  border-color: #c3d2c3;
+  font-weight: 700;
+}
+
+.package .btn:hover,
+.extras .btn:hover {
+  background: #c8d8c8;
+  color: #174a3b;
+  border-color: #b4c6b4;
+}
+
+html[data-theme="dark"] .package .btn,
+html[data-theme="dark"] .extras .btn {
+  background: rgba(212, 181, 122, 0.14);
+  color: #f3eee4;
+  border-color: rgba(212, 181, 122, 0.32);
+}
+
+html[data-theme="dark"] .package .btn:hover,
+html[data-theme="dark"] .extras .btn:hover {
+  background: rgba(212, 181, 122, 0.24);
+  color: #f3eee4;
 }
 
 .price-note {
@@ -909,6 +939,14 @@ html[data-theme="dark"] .text-link {
 .card p {
   margin: 0;
   color: var(--muted);
+}
+
+.card .package-badge {
+  color: #174a3b;
+}
+
+html[data-theme="dark"] .card .package-badge {
+  color: #f3eee4;
 }
 
 .card.package.is-featured {
